@@ -1,0 +1,15 @@
+[package]
+name = "arpspoof-rs"
+version = "0.1.0"
+authors = ["chumachok <chumachok11@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+getopts = "0.2"
+pnet = "0.28.0"
+rand = "0.8.4"
+procfs = "0.12.0"
+ctrlc = { version = "3.0", features = ["termination"] }
+
