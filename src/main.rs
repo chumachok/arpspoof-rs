@@ -89,8 +89,8 @@ fn main() {
 
   let mut opts = Options::new();
   opts.optopt("i", "iface", "set network interface", "NETWORK_INTERFACE");
-  opts.optopt("t", "target_ip_str", "set target ip", "TARGET_IP_str");
-  opts.optopt("g", "gateway_ip_str", "set gateway ip", "GATEWAY_IP_str");
+  opts.optopt("t", "target_ip_str", "set target ip", "TARGET_IP");
+  opts.optopt("g", "gateway_ip_str", "set gateway ip", "GATEWAY_IP");
   opts.optflag("h", "help", "prints usage instructions");
 
   let matches = match opts.parse(&args[1..]) {
